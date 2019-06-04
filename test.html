@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="full.css">
+    <link rel="shortcut icon" href="image/Nps-KIR.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div>
+            <img src="image/Nps-KIR - 副本.jpg" style="width:120px;height:120px;border-radius:56px;position:absolute;left:020px;top:0px;z-index: 5" alt="">
+        <div class="main">
+            <div class="list" >
+                <span style=" border-bottom: none;">
+                    <h2 style="margin-left:100px;">Nps.KIR软件</h2>
+                </span>
+                <nav>
+                    <div class="colordiv" style="width:200px;height:50px;background: rgb(91, 133, 98);position: absolute;top: 125px;"></div>
+                    <div class="colordiv" style="width:200px;height:50px;background: rgb(91, 133, 98);position: absolute;top: 125px;right: 0px;"></div>
+                    <ul class="mainbody" style="margin-top:25px;">
+                        <li id="wenjian" class="wenjian">文件
+                            <ul class="wenjian2">
+                                <li id="open">打开
+                                    <ul>
+                                        <li id="yuanshi">原始</li>
+                                        <li class="tiaokong">调控</li>
+                                        <input type="file" style="cursor: pointer" class="choosefile" id="inputfile">
+                                    </ul>
+                                </li>
+                                <li>新建</li>
+                                <li>保存</li>
+                                <li>另保存</li>
+                                <li>保存备份</li>
+                            </ul>
+                        </li>
+                        <li class="gongju">编辑
+                            <ul class="gongju2" style="left:180px;">
+                                <li>粘贴</li>
+                                <li>剪切</li>
+                                <li>恢复</li>
+                                <li>删除</li>
+                                <li>复制</li>
+                            </ul>
+                        </li>
+                        <li class="gongju">视图
+                            <ul class="gongju2" style="left:360px;">
+                                <li>图表</li>
+                                <li>报表</li>
+                                <li>数据视图</li>
+                                <li>布局视图</li>
+                            </ul>
+                        </li>
+                        <li class="gongju">书签
+                            <ul class="gongju2" style="left:540px;">
+                                <li>创建书签</li>
+                                <li>管理书签</li>
+                            </ul class="gongju2">
+                        </li>
+                        <li class="gongju">插入
+                            <ul class="gongju2" style="left:720px;">
+                                <li>数据</li>
+                                <li>文本</li>
+                                <li>标题</li>
+                            </ul>
+                        </li>
+                        <li class="gongju">选择
+                            <ul class="gongju2" style="left:900px;">
+                                <li>按图形选择</li>
+                                <li>按属性选择</li>
+                                <li>按位置选择</li>
+                            </ul>
+                        </li>
+                        <li class="gongju">工具
+                            <ul class="gongju2">
+                                <li id="jisuanGPI">计算GPI</li>
+                                <li id="jisuanIGPI">计算IGPI</li>
+                                <li class="tiaokong">调控</li>
+                            </ul>
+                        </li>
+                        <li class="gongju">自定义
+                            <ul class="gongju2" style="left:1260px;">
+                                <li>工具条</li>
+                                <li>拓展模块</li>
+                                <li>加载项管理器</li>
+                                <li>自定义模式</li>
+                                <li>样式管理器</li>
+                            </ul>
+                        </li>
+                        <li class="gongju">窗口
+                            <ul class="gongju2" style="left:1440px;">
+                                <li>总览</li>
+                                <li>放大镜</li>
+                                <li>查看器</li>
+                                <li>内容列表</li>
+                                <li>搜索</li>
+                            </ul>
+                        </li>
+                        <li class="gongju">帮助
+                            <ul class="gongju2" style="left:1620px;">
+                                <li>关于NpsAR</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="image" style="margin-top:50px;">
+            </div>
+            <div id="image2" style="display:none;margin-top:50px;">
+            </div>
+            <div id="centerbanner" >
+                <div class="close">
+                    <button id="close" style="display:none;">x</button>
+                </div>
+                <div id="centerbanner2" class="cb2" style="display:none;">
+                    <span class="h2">
+                        <h2>计算GPI</h2>
+                    </span>
+                    <div class="buttongroup">
+                        <button class="btng1">计算GLI</button>
+                        <button class="btng1" style="width:360px;" type="button">距离、高程、坡度</button>
+                        <button class="btng1">GPI运算</button>
+                        <div class="banner" style="display: block;">
+                            <div id="GLI2">
+                                <form action="#">
+                                    <img src="image/GLI公式.PNG" style="width:1350px;margin-left: -150px;" class="gongshitu" alt="">
+                                    <fieldset style="border:1px black solid;padding-left: 20px;height: 170px;">
+                                        <legend>输入文件</legend>
+                                        <label for="" >流域景观分布图<input type="text"
+                                            name="inputtest" class="labelstyle " style="margin-left:120px;"><button type="button">浏览</button>
+                                            <input type="file"  style="left:915px;top: 545px;" class="choosefile2">
+                                        </label>
+                                        <label for=""  class="labelstyle">网格划分 
+                                            <input type="text" style="width:165px;margin-left: 190px;"  class="number">m&emsp;*
+                                            <input style="width:165px;" type="text" class="number">m
+                                            <button type="button" id="copy1">确定</button>
+                                            <label for="" style="font-size:18px;font-size: bold ;"  class="labelstyle">导入非点源污染权重(.xls/.xlsx/.doc)<input type="text"
+                                                name="inputtest" style="margin-left: 10px;">
+                                            <button type="button">浏览</button>
+                                            <input type="file"  style="left:915px;top: 715px;" class="choosefile2">
+                                        </label>
+                                        
+                                            </label>
+                                    </fieldset>
+                                    <fieldset style="border:1px black solid;padding-left: 20px;height: 90px;">
+                                        <legend>输出文件</legend>
+                                        <label for="">景观网格图<input type="text" style="margin-left: 170px;" class="copytext ">
+                                        </label>
+                                    </fieldset>
+                                    <fieldset style="border:1px black solid;padding-left: 20px;height: 90px;">
+                                        <legend>输出矢量</legend>
+                                        <label for=""> GLI(矢量)<input type="text" name="inputtest" style="margin-left: 190px;">
+                                            <button type="button" id="shuchushiliang">输出</button>
+                                            <input type="file"  style="left:915px;top: 805px; display: none" class="choosefile2">
+                                        </label>
+                                    </fieldset>
+                                    <fieldset style="border:1px black solid;padding-left: 20px;height: 90px;">
+                                        <legend>转为栅格</legend>
+                                        <label for=""  class="labelstyle">栅格单元大小<input type="text" style="width:165px;margin-left: 145px;"
+                                                class="inputnumber">m&emsp;*
+                                            <input type="text" style="width:165px;" class="inputnumber">m</label>
+                                    </fieldset>
+                                    <fieldset style="border:1px black solid;padding-left: 20px;">
+                                        <legend>输出文件</legend>
+                                        <label for="">GLI(栅格)<input type="text"style="margin-left: 190px;" class="copytext">
+                                            <button type="button" id="copy2" >输出</button>
+                                        </label>
+                                        <button class="neXT" type="button">下一步</button>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="banner" style="display: none;">
+                            <div id="juli2">
+                                <form action="#">
+                                    <img src="image/高程.PNG" class="gongshitu" style="height: 500px;width: 1050PX;" alt="">
+                                    <fieldset style="border:1px black solid;padding-left: 20px;">
+                                        <legend>数据处理</legend>
+                                        <fieldset style="border:1px black solid;padding-left: 20px;">
+                                            <legend>输入文件</legend>
+                                            <label for="">水系(矢量数据)<input type="text" style="margin-left: 180px;" name="inputtest">
+                                                &emsp;&emsp;<button type="button" style="position:absolute;">打开</button>
+                                                <input type="file" style="left: 1000px;margin-top: 125px;" class="choosefile2">
+                                            </label>
+                                            <label for="">栅格单元大小 
+                                                <input type="text" style="width:165px;margin-left: 190px;" class="number">m&emsp;*
+                                                <input type="text" style="width:165px;" class="number">m
+                                            </label>
+                                            <fieldset style="border:1px black solid;padding-left: 20px;">
+                                                <legend>欧式距离分析</legend>
+                                            <label for="" style="margin-top:0px;">高程(栅格)<input
+                                                    type="text" name="inputtest" style="margin-left: 230px;">
+                                                    <button style="width:100px;height: 50px; position:absolute;left: 1000px;" type="button"
+                                                        id="shangeopen" >打开</button>
+                                                <input type="file" style="max-width:100px;height: 50px;left: 1000px;top: 750px;"
+                                                    class="choosefile2" multiple="multiple" id="duoxuan">
+                                            </label>
+                                                <label for=""
+                                                    style="margin-top:0px;">坡度(栅格)<input
+                                                        type="text" name="inputtest" style="margin-left: 230px;">
+                                                    <label for="">像元系数<input type="text"
+                                                            style="width:165px;margin-left: 245px;" class="number">&emsp;*
+                                                        <input type="text" style="width:165px;" class="number"><button
+                                                            type="button" style="margin-right:135px;" id="copy3"
+                                                            >输出</button></label>
+                                                </fieldset>
+                                        </fieldset>
+                                        <fieldset style="border:1px black solid;padding-left: 20px;">
+                                            <legend>输出文件</legend>
+                                            <label for="">离水体距离(栅格)  <input type="text" style="margin-left: 155px;" class="copytext">
+                                            </label>
+                                            <label for="">高程(栅格)<input type="text" style="margin-left: 230px;" class="copytext">
+                                            </label>
+                                            <label for="">坡度(栅格)<input type="text" style="margin-left: 230px;" class="copytext">
+                                                <div class="divbutton"
+                                                    style="position:absolute;left:850px;top: 950px;">
+                                                    <button type="button" id="gpibtn" class="neXT">下一步</button>
+                                                </div>
+                                            </label>
+                                        </fieldset>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="banner" style="display:none;">
+                            <div id="GPI" >
+                                <form action="#">
+                                    <img src="image/GPI.PNG " class="gongshitu" alt="">
+                                    <fieldset style="border:1px black solid;padding-left: 20px;">
+                                        <legend>输入文件</legend>
+                                        <label for="">GLI(栅格)<input type="text"
+                                                class="copytext" style="margin-left: 210px;">
+                                        </label>
+                                        <label for="">离水体距离(栅格)<input type="text" class="copytext" style="margin-left: 120px;"> 
+                                        </label>
+                                        <label for="">高程(栅格)<input type="text" class="copytext" style="margin-left: 195px;">
+                                        </label>
+                                        <label for="">坡度(栅格)<input type="text" class="copytext" style="margin-left: 195px;">
+                                        </label>
+                                    </fieldset>
+                                    <fieldset style="border:1px black solid;padding-left: 20px;">
+                                        <legend>输出文件</legend>
+                                        <label for=""> GPI<input type="text"class="copytext" style="margin-left: 270px;">
+                                                <button id="closegpi" style="margin-left:15px;margin-right: 50px;"type="button">查看结果</button>
+                                                <button type="button" style= "margin-right: 0px;" id="copy4">输出</button>
+                                        </label>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="centerbanner3" class="cb2" style="display: none;">
+                    <span class="h2">
+                        <h2>计算IGPI</h2>
+                    </span>
+                    <div class="buttongroup">
+                        <button class="btng2" type="button">邻域计算NII</button>
+                        <button class="btng2" type="button">IGPI运算</button>
+                        <button class="btng2" type="button">关键区识别</button>
+                        <div class="banner2" style="display: block;">
+                            <div id="NII">
+                                <form action="#">
+                                    <img src="image/捕获3.PNG" style="height: 550px;" class="gongshitu" alt="">
+                                    <fieldset style="border:1px black solid;padding-left: 20px;">
+                                        <legend>输入文件</legend>
+                                        <label for="">高程(栅格)&emsp;&emsp;&emsp;&emsp;&emsp;<input type="text" class="copytext">
+                                        </label>
+                                        <label for="">GPI&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input
+                                                type="text" class="copytext">
+                                        </label>
+                                    </fieldset>
+                                    <fieldset style="border:1px black solid;padding-left: 20px;">
+                                        <legend>输出文件</legend>
+                                        <label for="" style="margin-bottom:10px;">NII(.jpg)&emsp;&emsp;&emsp;&emsp;&emsp;&ensp; <input type="text"
+                                                class="copytext">
+                                            <button id="niibtn" type="button" style="margin-left:15px;margin-right: 50px;">下一步</button>
+                                            <button  type="button"id="copy5"style="margin-right: 0px;">输出</button>
+                                        </label>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="banner2" style="display: none;">
+                            <div id="IGPI">
+                                <form action="#">
+                                    <img src="image/捕获4.PNG" style="height: 550px;" class="gongshitu" alt="">
+                                    <fieldset style="border:1px black solid;padding-left: 20px;">
+                                        <legend>输入文件</legend>
+                                        <label for="">NII(.jpg)&emsp;&emsp;<input type="text" class="copytext">
+                                        </label>
+                                        <label for="">GPI &emsp;&emsp;&emsp;&emsp;<input type="text" class="copytext">
+                                        </label>
+                                    </fieldset>
+                                    <fieldset style="border:1px black solid;padding-left: 20px;">
+                                        <legend>输出文件</legend>
+                                        <label for="">IGPI&emsp;&emsp;&emsp;&emsp;<input type="text" class="copytext">
+                                            <div class="divbutton" style="margin-right:234px;">
+                                                <button id="closenii" style="margin-left:15px;"
+                                                    type="button">确定</button>
+                                                <button type="button" id="copy6">输出</button>
+                                            </div>
+                                        </label>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div> 
+                        <div class="banner2" id="banner4open" style="display: none;;height: 1700px;">
+                            <div id="open4" style="background: rgba(92, 92, 92, 0.103);">
+                                <form action="#">
+                                    <label for="">&emsp;要调控的流域景观分布图 <input type="text" name="inputtest">
+                                        <button type="button">打开</button>
+                                        <button type="button" id="liuyu"style="top: 105px;width: 100px;">流域景观分布图</button>
+                                        <input type="file" style="top: 98px;left: 740px;"
+                                            class="choosefile2">
+                                    </label>
+                                    <label for="">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;IGPI
+                                        <input type="text" name="inputtest">
+                                        <button type="button">打开</button>
+                                        <button type="button" id="igpi" style="top: 145px;width: 100px;">关键区识别</button>
+                                        <input type="file" style="cursor: pointer;top: 138px;left: 740px;"
+                                            class="choosefile2">
+                                    </label>
+                                    <div class="tabletop" style="margin-top:15px;margin-left: 115px;">
+                                        <div class="firstp" id="firstp" style="text-align:center">
+                                            <p style="width:1100px;">流域景观分布图</p>
+                                        </div>
+                                        <div id="sep" style="display:none;">
+                                            <p class="p1">高污染关键区分析</p>
+                                            <p class="p1">中污染关键区分析</p>
+                                            <p class="p1">低污染关键区分析</p>
+                                            <p class="p1">分析结果</p>
+                                        </div>
+                                    </div>
+                                    <div class="biaogetu" style="position: absolute;left: 150px;display: none">
+                                        <img   style="top:40px;"class = " biaogeimg" src="image/高污染区面积统计.png" alt="">
+                                        <img   style="top:80px;" class = " biaogeimg" src="image/中污染区面积统计.png" alt="">
+                                         <img  style="top:120px;" class = " biaogeimg"src="image/低污染区面积统计.png" alt=""> 
+                                        <img class="biaogeimg" src="image/污染关键区统计表头.png" alt="">
+                                        </div>
+                                    <div id="open_img">
+                                        <img class="tableimg" style="display:block" alt="">
+                                    </div>
+                                    <div id="open_img2">
+                                        <img class="tableimg" style="display:none" alt="">
+                                    </div>
+                                    <label for="" style="display:inline-block;margin-left: 200px;">选择调控位置后点击下一步进入措施选择
+                                        <button type="button" style="margin-right:300px;width: 100px;"
+                                            onclick="enter()">下一步</button></label>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="centerbanner4" class="cb3" style="display: none;border: 1px black solid">
+                    <span class="h2">
+                        <h2 style="margin-left:20px;">调控</h2>
+                    </span>
+                    <div class="buttongroup">
+                        <button class="btng4" type="button">调控措施</button>
+                        <button class="btng4" type="button">成本估算</button>
+                        <div id="tiaokong4" class="banner4" style="display:block;">
+                            <form action="#">
+                                <label for="">调控措施(可多选):</label>
+                                <div style="width:800px;height:35px;margin-top:25px;">
+                                    <button type="button" class="btng5">管控措施</button>
+                                    <button type="button" class="btng5">工程措施</button>
+                                    <button type="button" class="btng5">生物措施</button>
+                                </div>
+                                <div id="biaogetihuan1">
+                                    <div id="guankongcuoshi" class="banner5"
+                                        style="background:rgba(255, 255, 255, 0.493);display:block;">
+                                        <label for="">1.保护现有植被<input type="checkbox" name="checkbox1"
+                                                value="保护现有植被"><br></label>
+                                        <label for="">2.农田用药用肥管控<input type="checkbox" name="checkbox1"
+                                                value="农田用药用肥管控"><br></label>
+                                        <label for="">3.养殖业综合管控<input type="checkbox" name="checkbox1"
+                                                value="养殖业综合管控"><br></label>
+                                        <label for="">4.水体与湿地管控<input type="checkbox" name="checkbox1"
+                                                value="水体与湿地管控"><br></label>
+                                        <div class="divbutton" style="margin-right: 0px;width:500px;margin-top:230px; ">
+                                            <button type="button" onclick="complete(1,false)" style="margin-right:15px;"
+                                                class="next1">下一步</button>
+                                            <button type="button" onclick="complete2(1,false)"
+                                                style="margin-right:15px;" class="next2">下一步</button>
+                                            <button type="button" style="margin-right:15px;">上一步</button>
+                                        </div>
+                                    </div>
+                                    <div id="gongchengcuoshi" class="banner5"
+                                        style="display:none;background:rgba(255, 255, 255, 0.493); height: 520px;">
+                                        <label for="">1.初期雨水调蓄池<input type="checkbox" name="checkbox2"
+                                                value="初期雨水调蓄池"><br></label>
+                                        <label for="">2.前置库<input type="checkbox" name="checkbox2"
+                                                value="前置库"><br></label>
+                                        <label for="">3.生态型滚水坝<input type="checkbox" name="checkbox2"
+                                                value="生态型滚水坝"><br></label>
+                                        <label for="">4.生物沟渠<input type="checkbox" name="checkbox2"
+                                                value="生物沟渠"><br></label>
+                                        <label for="">5.梯田改造及配套设施建设<input type="checkbox" name="checkbox2"
+                                                value="梯田改造及配套设施建设"><br></label>
+                                        <label for="" style="height:120px;margin-top: 0px;">
+                                            <p style="width:200px;height:120px;float:left;line-height: 120px;">6.土壤改良
+                                            </p>
+                                            <div class="duoxuan">
+                                                <label for="">(1).农村<input type="checkbox" name="checkbox2"
+                                                        value="土壤改良(农村)"><br></label>
+                                                <label for="">(2).城市<input type="checkbox" name="checkbox2"
+                                                        value="土壤改良(城市)"><br></label>
+                                            </div>
+                                        </label>
+                                        <label for="">7.灌排设施建设<input type="checkbox" name="checkbox2"
+                                                value="灌排设施建设"><br></labesl>
+                                            <label for="">8.养殖场废弃物处理<input type="checkbox" name="checkbox2"
+                                                    value="养殖场废弃物处理"><br></label>
+                                            <div class="divbutton"
+                                                style="margin-right: 200px;width:500px;margin-top:25px;float: right; ">
+                                                <button type="button" style="margin-left:15px;float: right;"
+                                                    onclick="complete(2,false)" class="next1">下一步</button>
+                                               
+                                                <button type="button" onclick="complete2(2,false)"
+                                                    style="margin-right:15px;float: right;" class="next2">下一步</button>
+                                                <button type="button"
+                                                    style="margin-right:15px;float: right;">上一步</button>
+                                            </div>
+                                    </div>
+                                    <div id="shengwucuoshi" class="banner5"
+                                        style="display:none;background:rgba(255, 255, 255, 0.493); height: 520px;">
+                                        <label for="" style="height:120px;margin-top: 0px;">
+                                            <p style="width:200px;height:120px;float:left;line-height: 120px;">1.污染物路径拦蓄
+                                            </p>
+                                            <div class="duoxuan">
+                                                <label for="">(1)一网两带<input type="checkbox" name="checkbox3"
+                                                        value="污染物路径拦蓄(一网两带)"><br></label>
+                                                <label for="">(2)串糖葫芦<input type="checkbox" name="checkbox3"
+                                                        value="污染物路径拦蓄(串糖葫芦)"><br></label>
+                                                <label for="">(3)多级生态塘<input type="checkbox" name="checkbox3"
+                                                        value="污染物路径拦蓄(多级生态塘)"><br></label>
+                                            </div>
+                                        </label>
+                                        <label for="" style="margin-top:20px;">2.构建河岸湿地生态林带<input type="checkbox" name="checkbox3"
+                                                value="构建河岸湿地生态林带"><br></label>
+                                        <label for="">3.排放口生物强化净化处理<input type="checkbox" name="checkbox3"
+                                                value="排放口生物强化净化处理"><br></label>
+                                        <label for="" style="height:100px;margin-top: 20px;display: block;">
+                                            <p style="width:250px;height:70px;float:left;margin-top:30px">
+                                                4.水体生物净化措施</p>
+                                            <div class="duoxuan" style="width:400px;height:80px;float:left;margin-left: 0px;">
+                                                <label for="" >(1)人工湿地<input type="checkbox" name="checkbox3"
+                                                        value="水体生物净化措施（人工湿地）"style="width:500px;"><br></label>
+                                                <label for="">(2)人工浮岛<input type="checkbox" name="checkbox3"
+                                                        value="水体生物净化措施（人工浮岛）"style="width:500px;"><br></label>
+                                            </div>
+                                        </label>
+                                        <label for="">5.天然湿地恢复与保护
+                                            <input type="checkbox" name="checkbox3" value="天然湿地恢复与保护"><br></label>
+                                        <div class="divbutton"
+                                            style="margin-right:0px;width:500px;margin-top:125px; float: right ">
+                                            <button type="button" style="margin-left:15px;float: right;"
+                                                onclick="complete(3,false)" class="next1">下一步</button>
+                                            <button type="button" onclick="complete2(3,false)"
+                                                style="margin-right:15px;float: right;" class="next2">下一步</button>
+                                            <button type="button" style="margin-right:15px;float: right; ">上一步</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="chengbengusuan" class="banner4" style="display:none;margin-left: 0px;">
+                            <div class="table1" style="text-align: center;">
+                                <table border="1">
+                                    <thead>
+                                        <th style="width:100px;">方案</th>
+                                        <th style="width:200px;">管控措施</th>
+                                        <th style="width:270px;">工程措施</th>
+                                        <th style="width:300px;">生物措施</th>
+                                        <th style="width:150px;">总价</th>
+                                    </thead>
+                                    <tr>
+                                        <td>1</td>
+                                        <td id="td1"></td>
+                                        <td id="td2"></td>
+                                        <td id="td3"></td>
+                                        <td id="tdsum1"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td id="td4"></td>
+                                        <td id="td5"></td>
+                                        <td id="td6"></td>
+                                        <td id="tdsum2"></td>
+                                    </tr>
+                                </table>
+                                <div class="divbutton" style="margin-top:200px;margin-right: 0px;width:500px; ">
+                                    <form action="">
+                                        <button id="reset" type="button" style="margin-left:15px;" >下一个方案(方案2)</button>
+                                        <button id="reset2" type="button" style="margin-left:15px;display: none" >下一个方案(方案1)</button>
+                                        <button type="button" style="margin-left:15px;" onclick="end1(1)"
+                                            id="end">结果</button>
+                                        <button type="button" style="margin-left:15px;display: none" onclick="end1(2)"
+                                            id="end2">结果</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script type="text/javascript" src="test.js"></script>
+
+</body>
+
+</html
