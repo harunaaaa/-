@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        *{
+    margin: 0px;
+    padding: 0px;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    min-width: 1400px;
+}
+/* top */
+#top{
+    background: gainsboro;
+    width: 100%;
+    height: 150px;
+    border-bottom: 2px blue solid;
+}
+.top_inner{
+    width: 1400px;
+    height: 80%;
+    padding-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 110px;
+}
+.top_inner  img,h2,span,p{
+    float: left; 
+}
+.top_inner h2{
+    margin-left: 10px;
+}
+.top_list li,.top_list .mpv{
+    font-size: 18px;
+}
+.top_list li{
+    margin-right: 10px;
+}
+.imooccom{
+    margin-right: 20px;
+}
+.login_a,.register_a{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.top_inner p{
+    font-size: 35px;
+    font-weight: lighter;
+    margin-left: 5px;
+}
+.top_inner span{
+    color: rgb(53, 53, 53);
+    margin-left: 5px;
+    letter-spacing: 1px;
+}
+.top_inner .shuxian{
+    margin-left: 0px;
+}
+.top_list img{
+    width: 20px;
+    height: 30px;
+    margin-top: 40px;float: left;margin-left: 25px;
+}
+#top_list{
+    float: right;
+    height: 110px;
+    line-height: 110px;
+}
+.top_list li,a,span,img,p{
+    float: left;
+}
+/* 我的imooc */
+    .top_list .moreitem{
+        margin-top:-40px; 
+        position: absolute;
+        display:none;
+        background: white;
+        border: rgb(251, 116, 3) 1px solid;
+        width: 140px;
+        margin-left: 0px;
+    }
+    .moreitem ul{
+        width: 110px;
+        margin-top:10px; 
+    }
+    .moreitem ul li{
+        height: 20px;
+        width: inherit;
+        font-size: 10px;
+        line-height: 20px; 
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .underline{
+        border-bottom: 1px grey dotted;
+        margin-bottom: 5px;
+    }
+    .li_spd_big{
+        margin-bottom: 8px;
+    }
+    .li_spd_small{
+        margin-bottom: 5px;
+    }
+/* main */
+#main{
+    margin-top: 10px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 1400px;
+   height: 700px;
+}
+.main_p{
+    margin-bottom: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.main_p p{
+    float: left;
+}
+.p_style1{
+    font-size: 25px;
+}
+.p_style2{
+    font-size: 20px;
+}
+.account_information{
+    border: 2px rgb(251, 116, 3) solid;
+    border-radius: 6px;
+}
+.account_information h3{
+    margin-top: -2px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    background:  rgb(251, 116, 3);
+    border-radius: 6px;
+    color: white;
+    font-size: 25px;
+}
+.account_information span{
+    color:  rgb(251, 116, 3);
+}
+/* 密码框 */
+    #password{
+        float: left;
+    }
+/* 大表单 */
+form{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+form li{
+    height: 30px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    width: 800px;
+}
+form label{
+    float: left;
+}
+form label{
+    line-height: 30px;
+    width: 98px;
+    display: inline-block;
+}
+form input{
+    padding-bottom: 6px;
+    padding-top:6px; 
+    height: 14px;
+    margin-left: 15px;
+}
+form p,#checkbox{
+    float: left;
+}
+/* 多选 formselect */
+    .form_select{
+        margin-left: 15px;
+        width: 173px;
+        height: 28px;
+        line-height: 20px;
+    }
+/* 表单提示 */
+    .hint,.error,.correct{
+        font-size: 15px;
+        height: 30px;
+        float: none;
+        margin-left: 15px;
+    }
+    .account_information .error{
+        color: red;
+    }
+    .account_information .correct{
+        color: green;
+    }
+/* 密码验证颜色 */
+    .red_box,.gray_box,.yellow_box,.green_box{
+        float: left;
+        border: 1px solid rgba(0, 0, 0, 0.425);
+        margin-right: 10px;
+        margin-top: 9px;
+        width: 50px;
+        height: 10px;
+    }
+    .red_box{
+        margin-left: 15px;
+        background: red;
+    }
+    .gray_box{
+        background: gray;
+    }
+    .yellow_box{
+        background: yellow;
+    }
+    .green_box{
+        background: green;
+    }
+/* 勾选及btn */
+#checkbox{
+    height: 21px;
+    margin-left:132px; 
+}
+.checkbox{
+    margin-left: 5px;
+}
+.chinatrain{
+    color: blue;
+    float: none;
+}
+#submit_btn{
+    width: 180px;
+    height: 40px;
+    background:rgb(251, 116, 3);   
+    border: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 260px;
+    margin-bottom: 50px;
+    padding-top: 0px;
+}
+/* footer */
+#footer{
+    background: gray;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    bottom: 0px;
+    border-top: 2px blue solid;
+}
+footer{
+    margin-top: 20px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <div class="top_inner">
+            <img src="img/logo.png" alt="">
+            <h2>慕课高铁客户服务中心</h2>
+            <p>|</p><span>客户服务</span>
+            <div id="top_list">
+                <div class="top_list">
+                    <li>意见反馈</li>
+                    <a href="" class="imooccom">imooc@com</a><span>你好，请</span><a href="" class="login_a">登录</a><span class="shuxian">|</span><a href="" class="register_a">注册</a><a href="#" class="imooc" id="imooc">我的imooc
+                        <span class="moreitem">
+                            <ul>
+                                <li class="li_spd_big">未完成订单</li>
+                                <li class="underline">已完成订单(改/退)</li>
+                                <li class="underline">我的保险</li>
+                                <li class="li_spd_big">查看个人信息</li>
+                                <li class="underline">账户安全</li>
+                                <li class="underline">常用联系人</li>
+                                <li class="li_spd_big">重点旅客预约</li>
+                                <li class="underline">遗失物品查找</li>
+                                <li class="underline">服务查询</li>
+                                <li class="li_spd_big">投诉</li>
+                                <li class="li_spd_small">建议</li>
+                            </ul>
+                        </span>
+                    </a>
+                    <img src="img/未标题-1.png" alt="">
+                    <p class="mpv">手机版</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="main_p">
+            <p class="p_style1">您现在的位置 : </p>
+            <p class="p_style2">客运首页 > 注册</p>
+        </div>
+        <div class="account_information">
+            <h3>账号信息</h3>
+            <form action="#">
+                <li><span>*&thinsp;</span><label for="">用&ensp;户&ensp;名&nbsp;:</label><input type="text" id="username" autofocus required placeholder="用户名设置成功后不可修改"><span class="hint">6-30位字母、数字或"_",字母开头</span></li>
+                <li><span>*&thinsp;</span><label for="">登录密码&nbsp;:</label><input type="password" id="password" required placeholder="6-20位字母、数字或符号"> <span class="hint"></span> </li>
+                <li><span>*&thinsp;</span><label for="">确认密码&nbsp;:</label><input type="password" id="confirm_password" required placeholder="再次输入您的登录密码"><span class="hint"></span></li>
+                <li><span>*&thinsp;</span><label for="">姓&emsp;&emsp;名&nbsp;:</label><input type="text" id="name" autocomplete="off" required placeholder="请输入姓名"><span class="hint">姓名填写规则</span></li>
+                <li><span>*&thinsp;</span><label for="">证件类型&nbsp;:</label><select name=""  class="form_select"><option value="">二代身份证</option><option value="">！</option></select></li>
+                <li><span>*&thinsp;</span><label for="">证件号码&nbsp;:</label><input type="text" id="IDcard" required placeholder="请输入您的证件号码"><span class="hint"></span></li>
+                <li><span>*&thinsp;</span><label for="">邮&emsp;&emsp;箱&nbsp;:</label><input type="email" id="email" required placeholder="请正确填写邮箱地址"><span class="hint"></span></li>
+                <li><span>*&thinsp;</span><label for="">手机号码&nbsp;:</label><input type="text" id="telnumber" required placeholder="请输入您的手机号码"><span class="hint">请正确填写手机号码，稍后将向该手机号码发送短信验证码</span></li>
+                <li><span>*&thinsp;</span><label for="">旅客类型&nbsp;:</label><select name="" id="" class="form_select"><option value="">成人</option><option value="">儿童</option></select></li>
+                <input type="checkbox" name="" id="checkbox" >
+                <p class="checkbox">我已阅读并同意遵守<span class="chinatrain">《中国铁路客户服务中心网站服务条款》</span></p>
+                <br>
+                <input type="button" value="下一步" id="submit_btn">
+            </form>
+        </div>
+    </div>
+    <div id="footer">
+        <footer>
+            关于我们|网站声明<br>
+            Copyright@ 2017imooc.com All Rights Reserved | 京ICP备 13046642号-2
+        </footer>
+    </div>
+    <!-- <script src="js.js"></script> -->
+    <script>
+        // top_banner 动画
+var imooc = document.getElementsByClassName("imooc");
+var moreitem = document.getElementsByClassName("moreitem")
+var moreitem_li = document.querySelectorAll(".li_spd_big,.underline,.li_spd_small")
+window.onload = function () {
+}
+
+imooc[0].onmouseenter = function () {
+    moreitem[0].style.display = "block";
+}
+imooc[0].onmouseleave = function () {
+    moreitem[0].style.display = "none";
+}
+for (var i = 0; i < moreitem_li.length; i++) {
+    moreitem_li[i].onmouseenter = function () {
+        this.style.cursor = "grab";
+        this.style.color = "rgb(251, 116, 3)";
+    }
+    moreitem_li[i].onmouseleave = function () {
+        this.style.cursor = "pointer";
+        this.style.color = "grey";
+    }
+}
+// 表达验证
+var username_submit = false;
+var password_submit = false;
+var confirm_password_submit = false;
+var your_name_submit = false;
+var IDcard_submit = false;
+var email_submit = false;
+var telnumber_submit = false;
+var options = false;
+//用户名1
+var username = document.getElementById("username");
+var hint = document.getElementsByClassName("hint")
+username.onfocus = function () {
+    if (username.value == "") {
+        hint[0].textContent = '6-30位字母、数字或"_",字母开头';
+        hint[0].className = "hint";
+    }
+}
+username.onblur = function () {
+    var reg = /^[a-zA-Z]\w{6,30}$/
+    if (username.value == "") {
+        hint[0].textContent = '用户名不能为空';
+        hint[0].className = "error hint";
+    } else {
+        if (reg.test(username.value)) {
+            hint[0].textContent = "用户输入正确";
+            hint[0].className = "correct hint";
+            username_submit = true;
+        } else {
+            hint[0].className = "error hint";
+            hint[0].textContent = '6-30位字母、数字或"_",字母开头';
+        }
+    }
+}
+
+// 密码2
+var password = document.getElementById("password");
+password.onfocus = function () {
+    if (password.value == "") {
+        hint[1].textContent = '密码不能为空';
+        hint[1].className = "hint";
+    }
+}
+password.onblur = function () {
+    var reg = /^\w{6,20}$/;
+    if (password.value == "") {
+        hint[1].textContent = '密码不能为空';
+        hint[1].className = "error hint";
+    } else {
+        if (reg.test(password.value) && ((password.value.length >= 6) && (password.value.length <= 20))) {
+            Password_security_check(password.value);
+            if (confirm_password.value != null) {
+                Secondary_password_confirmation()
+            } else {
+                return;
+            }
+            hint[1].className = "correct hint";
+            password_submit = true;
+        } else {
+            hint[1].className = "error hint";
+            hint[1].textContent = '请输入6-20位的密码';
+        }
+    }
+};
+function Secondary_password_confirmation() {
+    if (password.value == confirm_password.value) {
+        hint[2].textContent = "两次输入一致";
+        hint[2].className = "correct hint";
+    } else {
+        hint[2].textContent = '两次输入不一致';
+    }
+}
+function Password_security_check(password) {
+    if (password.length >= 6 && password.length <= 11) {
+        hint[1].innerHTML = '<div class="red_box"></div><div class="gray_box"></div><div class="gray_box"></div>'
+    } else if (password.length > 11 && password.length <= 16) {
+        hint[1].innerHTML = '<div class="red_box"></div><div class="yellow_box"></div><div class="gray_box"></div>'
+    } else if (password.length > 16 && password.length <= 20) {
+        hint[1].innerHTML = '<div class="red_box"></div><div class="yellow_box"></div><div class="green_box"></div>'
+    }
+}
+// 确认密码3
+var confirm_password = document.getElementById('confirm_password')
+confirm_password.onfocus = function () {
+    if (confirm_password.value == "") {
+        hint[2].textContent = '密码不能为空';
+        hint[2].className = "hint";
+    }
+}
+confirm_password.onblur = function () {
+    var reg = /^\w{6,20}$/
+    if (confirm_password.value == "") {
+        hint[2].textContent = '密码不能为空';
+        hint[2].className = "error hint";
+    } else {
+        if (reg.test(confirm_password.value) && (password.value == confirm_password.value)) {
+            hint[2].textContent = "两次输入一致";
+            hint[2].className = "correct hint";
+            confirm_password_submit = true;
+        } else {
+            hint[2].textContent = '两次输入不一致';
+            hint[2].className = "error hint";
+            confirm_password_submit = false;
+        }
+    }
+}
+// name4
+var your_name = document.getElementById('name')
+your_name.onfocus = function () {
+    if (your_name.value == "") {
+        hint[3].textContent = '姓名不能为空';
+        hint[3].className = "hint";
+    }
+}
+your_name.onblur = function () {
+    var reg1 = /^[\u4e00-\u9fa5]$/
+    // 单独使用不用大写
+    var reg = /^[\u4E00-\u9FA5a-zA-Z]{2,30}$/
+    // 结合使用要大写
+    if (your_name.value == "") {
+        hint[3].textContent = '姓名不能为空';
+        hint[3].className = "error hint";
+    } else {
+        if (reg.test(your_name.value)) {
+            hint[3].textContent = "姓名格式正确";
+            hint[3].className = "correct hint";
+            your_name_submit = true;
+        } else {
+            hint[3].className = "error hint";
+            hint[3].textContent = '姓名只能包含中文或者英文，且字符在3-30个之间';
+            your_name_submit = false;
+        }
+    }
+}
+// IDcard\5
+var IDcard = document.getElementById('IDcard')
+IDcard.onfocus = function () {
+    if (IDcard.value == "") {
+        hint[4].textContent = '请输入18位身份证号码';
+        hint[4].className = "hint";
+    }
+}
+IDcard.onblur = function () {
+    var reg = /^\d{17}[0-9x]$/
+    if (IDcard.value == "") {
+        hint[4].textContent = '身份证号码不能为空';
+        hint[4].className = "error hint";
+    } else {
+        if (reg.test(IDcard.value)) {
+            hint[4].textContent = "身份证号码格式正确";
+            hint[4].className = "correct hint";
+            IDcard_submit = true;
+        } else {
+            hint[4].className = "error hint";
+            hint[4].textContent = '身份证号码格式错误';
+            IDcard_submit = false;
+        }
+    }
+}
+// 邮箱6
+var email = document.getElementById('email')
+email.onfocus = function () {
+    if (email.value == "") {
+        hint[5].textContent = '邮箱不能为空';
+        hint[5].className = "hint";
+    }
+}
+email.onblur = function () {
+    var reg = /^\w+@\w+(\.\w+)$/
+    // var reg  =/^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/
+    if (email.value == "") {
+        hint[5].textContent = '邮箱不能为空';
+        hint[5].className = "error hint";
+    } else {
+        if (reg.test(email.value)) {
+            hint[5].textContent = "邮箱格式正确";
+            hint[5].className = "correct hint";
+            email_submit = true;
+        } else {
+            hint[5].className = "error hint";
+            hint[5].textContent = "邮箱格式不正确";
+            email_submit = false;
+        }
+    }
+}
+// 手机号7
+var telnumber = document.getElementById('telnumber')
+telnumber.onfocus = function () {
+    if (telnumber.value == "") {
+        hint[6].textContent = '手机号不能为空';
+        hint[6].className = "hint";
+    }
+}
+telnumber.onblur = function () {
+    var reg = /^\d{11}$/
+    if (telnumber.value == "") {
+        hint[6].textContent = '手机号不能为空';
+        hint[6].className = "error hint";
+    } else {
+        if (reg.test(telnumber.value)) {
+            hint[6].textContent = "手机号码格式正确";
+            hint[6].className = "correct hint";
+            telnumber_submit = true;
+        } else {
+            hint[6].className = "error hint";
+            hint[6].textContent = '您输入的手机号不是有效的格式！';
+            telnumber_submit = false;
+        }
+    }
+}
+// 服务条款option
+function options_button(){
+    var option = document.getElementById("checkbox")
+    if(option.checked){
+        options = true;
+    }else{
+        option  =false;
+        alert("请勾选")
+    }
+}
+// 下一步 submit
+var submit_btn = document.getElementById("submit_btn");
+submit_btn.onclick = function () { 
+    options_button()
+    if(username_submit && password_submit && confirm_password_submit &&
+        your_name_submit&&IDcard_submit&&email_submit&&telnumber_submit&&options){
+            alert("注册成功");
+            telnumber.value = '';
+            email.value = '';
+            IDcard.value = '';
+            your_name.value = '';
+            password.value = '';
+            confirm_password.value = '';
+            username.value = '';
+            option.checked = false;
+        }
+    else{
+        console.log("falie")
+    }
+ }
+
+    </script>
+</body>
+
+</html>
